@@ -1,5 +1,7 @@
 import React from "react";
 import "./style/banner.scss";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+
 
 export const Banner = ({ getData, setinputData, inputData }) => {
   return (
@@ -19,7 +21,7 @@ export const Banner = ({ getData, setinputData, inputData }) => {
           onChange={(e) => setinputData(e.target.value)}
         />
         <button onClick={() => getData()}>
-          <i className="fa-solid fa-arrow-right"></i>
+        <ArrowForwardIcon />
         </button>
       </div>
     </div>

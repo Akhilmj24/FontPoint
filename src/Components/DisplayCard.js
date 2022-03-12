@@ -22,7 +22,7 @@ export const DisplayCard = ({
 
   const count = Math.ceil(fontDatas.length / PER_PAGE);
   const _DATA = usePagination(fontDatas, PER_PAGE);
-  console.log(count);
+  
 
   const handleChange = (e, p) => {
     setPage(p);
