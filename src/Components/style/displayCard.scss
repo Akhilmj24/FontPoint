@@ -6,15 +6,12 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: $base-color;
-    // background: $backgroungImg;
-    // background-size: cover;
-    // background-repeat: no-repeat;
     margin-bottom: 4.5%;
     margin-top: 2%;
     .card {
       background-color: white;
       border: 1px solid rgba(255, 255, 255, 0.397);
-      border-radius: 0.3rem;
+      border-radius: .8rem;
       margin: 0.8%;
       font-size: 0.8rem;
       -webkit-box-shadow: 2px 4px 12px -4px rgba(0, 0, 0, 0.75);

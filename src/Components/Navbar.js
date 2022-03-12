@@ -1,7 +1,6 @@
 import React from "react";
 import "./style/navbar.scss";
 import logoblack from "./image/logoblack.png";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export const Navbar = ({ inputData, setinputData, getData, fontDatas }) => {
   return (
@@ -22,7 +21,7 @@ export const Navbar = ({ inputData, setinputData, getData, fontDatas }) => {
           className={fontDatas.length === 0 ? "hideInput" : "showInput"}
         >
          
-          <ArrowForwardIcon />
+         <i className="fa-solid fa-arrow-right"></i>
         </button>
       </div>
     </div>

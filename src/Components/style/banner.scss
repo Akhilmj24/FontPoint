@@ -36,33 +36,42 @@
       border: none;
       outline: none;
       background-color: transparent;
-      font-size: 2rem;
+      font-size: 2rem !important;
       transition: 0.8s ease-in-out;
       cursor: pointer;
       &:hover {
         transform: rotate(360deg);
       }
     }
+    .icon{
+      
+      font-size: 3rem !important;
+    }
   }
 }
 
 @media screen and (max-width: 480px) {
   .banner_conatiner {
-    h1 {
-      font-size: 2.8rem;
-      padding: 3%;
+    .banner_content{
+      h1 {
+        font-size: 2.5rem;
+        padding: 3%;
+        padding-top: 10%;
+      }
     }
+    
     .inuputBanner {
-      position: relative;
+      text-align: start;
       margin-top: 25%;
+      
       input {
         padding: 3%;
-        width: 70%;
-        font-size: 2rem;
+        width: 75%;
+        font-size: .8rem;
       }
       button {
-        right: 10%;
-        font-size: 1.5rem;
+        right: 5%;
+        font-size: .9rem;
       }
     }
   }

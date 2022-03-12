@@ -2,12 +2,12 @@
 
 .header_container {
   width: 100%;
-  background:$base-color;
+  background: $base-color;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 0 20%;
-  
+
   .fontTransform {
     width: 50%;
     display: flex;
@@ -30,12 +30,6 @@
       }
     }
   }
-  .fontSilder{
-   .fontSilder_bar{
-       color: red !important;
-       background-color: red;
-   }
-  }
 }
 
 // for Drop Down
@@ -53,5 +47,21 @@
     border: none !important;
     border-radius: 3rem !important;
     text-transform: uppercase !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header_container {
+    flex-direction: column;
+
+    .fontTransform {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        padding: 3.5%;
+      }
+    }
   }
 }
