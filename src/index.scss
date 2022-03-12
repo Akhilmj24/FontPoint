@@ -4,7 +4,19 @@
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  
+  font-family: "Montserrat",Arial, Helvetica, sans-serif  
 }
 
+
+
+
+.App{
+  
+  background: url("./Components/image/brands-people-V9zInThgKa4-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 100%;
+  
+}
+$base-color: rgba(255, 255, 255, 0.616);
+$backgroungImg : url("./Components/image/brands-people-V9zInThgKa4-unsplash.jpg")

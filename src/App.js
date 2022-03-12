@@ -6,10 +6,13 @@ import { Navbar } from "./Components/Navbar";
 function App() {
   const [inputData, setinputData] = useState("");
   const [fontDatas, setfontDatas] = useState([]);
-  const [selectedCategory, setselectedCategory] = useState("sans-serif");
+  const [selectedCategory, setselectedCategory] = useState(["sans-serif"]);
+  const [selectedTransform, setselectedTransform] = useState("none");
+  const [fontSize, setfontSize] = useState("");
 
-  console.log(selectedCategory);
-  console.log(fontDatas);
+  
+  
+
 
   const getData = () => {
     if (inputData === "") {
@@ -41,18 +44,20 @@ function App() {
       <Navbar
         inputData={inputData}
         setinputData={setinputData}
-        setfontDatas={setfontDatas}
         getData={getData}
-        selectedCategory={selectedCategory}
-        setselectedCategory={setselectedCategory}
+        fontDatas={fontDatas}
       />
       <DisplayCard
         inputData={inputData}
-        setinputData={setinputData}
         fontDatas={fontDatas}
-        setfontDatas={setfontDatas}
         getData={getData}
+        setinputData={setinputData}
         selectedCategory={selectedCategory}
+        setselectedCategory={setselectedCategory}
+        selectedTransform={selectedTransform}
+        setselectedTransform={setselectedTransform}
+        fontSize={fontSize}
+        setfontSize={setfontSize}
       />
     </div>
   );

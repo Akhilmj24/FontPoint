@@ -1,35 +1,58 @@
+@import "../../index.scss";
+
 .display_container {
   .display {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rebeccapurple;
-
+    background-color: $base-color;
+    // background: $backgroungImg;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    margin-bottom: 4.5%;
+    margin-top: 2%;
     .card {
-      background-color: rgb(156, 104, 209);
+      background-color: white;
       border: 1px solid rgba(255, 255, 255, 0.397);
       border-radius: 0.3rem;
       margin: 0.8%;
       font-size: 0.8rem;
-      padding: 2%;
       -webkit-box-shadow: 2px 4px 12px -4px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 2px 4px 12px -4px rgba(0, 0, 0, 0.75);
       box-shadow: 2px 4px 12px -4px rgba(0, 0, 0, 0.75);
+      padding: 3%;
       cursor: pointer;
-      h5 {
-        color: white;
-        font-size: 3rem;
-      }
-      p {
-        font-size: 0.8rem;
-        color: rgba(255, 255, 255, 0.562);
 
-        span {
-          font-size: 1rem;
-          color: rgba(255, 255, 255, 0.712);
-          text-transform: capitalize;
+      .main_text {
+        h5 {
+          color: rgb(0, 0, 0);
+          font-size: 3rem;
+          text-align: center;
         }
       }
+      .fontDetails {
+        p {
+          font-size: 0.7rem;
+          color: rgba(0, 0, 0, 0.562);
+          margin-top: 5%;
+
+          span {
+            font-size: 0.8rem;
+            color: rgba(0, 0, 0, 0.562);
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+    .Pagination {
+      width: 100%;
+      padding: 1%;
+      position: fixed;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $base-color;
     }
   }
 }
@@ -51,7 +74,6 @@
 
         span {
           font-size: 0.8rem;
-          
         }
       }
     }

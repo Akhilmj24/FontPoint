@@ -4,14 +4,17 @@ import "./style/banner.scss";
 export const Banner = ({ getData, setinputData, inputData }) => {
   return (
     <div className="banner_conatiner">
-      <h1>
-        Choose a beautiful <br />
-        and suitable font for you 🥰
-      </h1>
+      <div className="banner_content">
+        <h1>
+          Help you choose a beautiful <br />
+          and suitable font for your <br />
+          creative projects 🥰
+        </h1>
+      </div>
       <div className="inuputBanner">
         <input
           type="text"
-          placeholder="Enter your text"
+          placeholder="enter a word for preview fonts"
           value={inputData}
           onChange={(e) => setinputData(e.target.value)}
         />

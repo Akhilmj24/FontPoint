@@ -1,11 +1,16 @@
+@import "../../index.scss";
+
 .banner_conatiner {
-  background-color: rebeccapurple;
+  background-color: $base-color;
   height: 87.5vh;
-  h1 {
-    font-size: 4rem;
-    padding: 2.3%;
-    text-shadow: 2px 3px 13px rgba(0, 0, 0, 0.466);
-    color: rgba(255, 255, 255, 0.959);
+  .banner_content {
+    h1 {
+      font-size: 4rem;
+      padding: 2.5%;
+      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.466);
+      color: rgba(48, 48, 48, 0.959);
+      font-family: "Poiret One", Arial, Helvetica, sans-serif;
+    }
   }
   .inuputBanner {
     position: relative;
@@ -15,9 +20,8 @@
       padding: 1.5%;
       border: none;
       outline: none;
-      background-color: rgba(255, 255, 255, 0.836);
+      background-color: rgba(255, 255, 255, 0.918);
       border-radius: 0.3rem;
-      font-family: Arial, Helvetica, sans-serif;
       color: rgba(0, 0, 0, 0.849);
       letter-spacing: 1px;
       margin: 0% 0 0 20%;
